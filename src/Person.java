@@ -65,4 +65,26 @@ public class Person {
     public void setYOB(int YOB) {
         this.YOB = YOB;
     }
+
+    // Additional methods
+    public String fullName() {
+        return firstName + " " + lastName;
+    }
+
+    public String formalName() {
+        return title + " " + fullName();
+    }
+
+    public String getAge() {
+        return getAge(Calendar.getInstance().get(Calendar.YEAR));
+    }
+
+    public String getAge(int year) {
+        int age = year - YOB;
+        return "Age: " + age;
+    }
+
+    public String toCSVDataRecord() {
+        return ID + ", " + firstName + ", " + lastName + ", " + title + ", " + YOB;
+    }
 }
