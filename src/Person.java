@@ -7,8 +7,12 @@ public class Person {
     private String title;
     private int YOB;
 
-    // Constructor
     public Person(String firstName, String lastName, String ID, String title, int YOB) {
+        // Validate that the YOB is within a reasonable range, for example, 1900 to the current year.
+        if (YOB < 1900 || YOB > Calendar.getInstance().get(Calendar.YEAR)) {
+            throw new IllegalArgumentException("Invalid year of birth");
+        }
+
         this.firstName = firstName;
         this.lastName = lastName;
         this.ID = ID;
@@ -16,8 +20,12 @@ public class Person {
         this.YOB = YOB;
     }
 
-    // Overloaded Constructor for testing purposes
     public Person(String firstName, String lastName, int YOB) {
+        // Validate that the YOB is within a reasonable range.
+        if (YOB < 1900 || YOB > Calendar.getInstance().get(Calendar.YEAR)) {
+            throw new IllegalArgumentException("Invalid year of birth");
+        }
+
         this.firstName = firstName;
         this.lastName = lastName;
         this.ID = "";
@@ -25,7 +33,6 @@ public class Person {
         this.YOB = YOB;
     }
 
-    // Getters and Setters
     public String getFirstName() {
         return firstName;
     }
@@ -63,10 +70,14 @@ public class Person {
     }
 
     public void setYOB(int YOB) {
+        // Validate that the YOB is within a reasonable range.
+        if (YOB < 1900 || YOB > Calendar.getInstance().get(Calendar.YEAR)) {
+            throw new IllegalArgumentException("Invalid year of birth");
+        }
+
         this.YOB = YOB;
     }
 
-    // Additional methods
     public String fullName() {
         return firstName + " " + lastName;
     }
