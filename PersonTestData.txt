@@ -1,0 +1,5 @@
+000001, J.K., Rowling, Mrs., 1965
+000002, Stephen, King, Mr., 1947
+000003, Jeff, Kinney, Mr., 1971
+000004, Colleen, Hoover, Mrs., 1979
+000005, Jenny, Han, Mrs., 1980

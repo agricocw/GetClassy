@@ -8,7 +8,6 @@ public class Person {
     private int YOB;
 
     public Person(String firstName, String lastName, String ID, String title, int YOB) {
-        // Validate that the YOB is within a reasonable range, for example, 1900 to the current year.
         if (YOB < 1900 || YOB > Calendar.getInstance().get(Calendar.YEAR)) {
             throw new IllegalArgumentException("Invalid year of birth");
         }
@@ -21,7 +20,7 @@ public class Person {
     }
 
     public Person(String firstName, String lastName, int YOB) {
-        // Validate that the YOB is within a reasonable range.
+
         if (YOB < 1900 || YOB > Calendar.getInstance().get(Calendar.YEAR)) {
             throw new IllegalArgumentException("Invalid year of birth");
         }
@@ -70,7 +69,7 @@ public class Person {
     }
 
     public void setYOB(int YOB) {
-        // Validate that the YOB is within a reasonable range.
+
         if (YOB < 1900 || YOB > Calendar.getInstance().get(Calendar.YEAR)) {
             throw new IllegalArgumentException("Invalid year of birth");
         }

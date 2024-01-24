@@ -1,0 +1,5 @@
+000001, Cell Phone, Iphone 15 Pro, 999.0
+000002, Tablet, Ipad 10th Generation, 449.0
+000003, Watch, Apple Watch Series 9, 399.0
+000004, Earbuds, Airpods Pro Second Generation, 249.0
+00005, Laptop, Macbook Air, 999.0
