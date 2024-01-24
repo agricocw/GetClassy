@@ -25,7 +25,7 @@ public class ProductReader {
             System.out.println("ID      Name                          Description                  Cost");
             System.out.println("=======================================================================");
 
-            // Process each line
+
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 String[] parts = line.split(",\\s*|\\s{2,}");

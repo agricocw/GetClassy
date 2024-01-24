@@ -17,19 +17,19 @@ class PersonTest {
 
     @Test
     public void testGetAge() {
-        // Assuming the current year is 2023
-        int currentYear = 2023;
 
-        // Creating a Person instance with a year of birth (YOB) of 1979
+        int currentYear = 2024;
+
+
         Person person = new Person("John", "Doe", 1979);
 
-        // Calculating the expected age based on the current year
+
         int expectedAge = currentYear - person.getYOB();
 
-        // Getting the actual age from the Person instance
+
         String actualAge = person.getAge(currentYear);
 
-        // Asserting that the actual age matches the expected age
+
         assertEquals("Age: " + expectedAge, actualAge);
     }
 
